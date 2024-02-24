@@ -1,10 +1,8 @@
 import React from "react";
 
-interface HomeProps {}
-
-const HomeSection: React.FC<HomeProps> = ({}) => {
+const HeaderSection: React.FC = ({}) => {
   return (
-    <div className="min-h-[70vh] grid place-items-center">
+    <div className="min-h-[65vh] grid place-items-center">
       <div className="sm:w-[80%] md:w-[60%] mx-auto">
         <p className="text-center text-xl sm:text-2xl mb-10">
           We are students of{" "}
@@ -18,4 +16,4 @@ const HomeSection: React.FC<HomeProps> = ({}) => {
   );
 };
 
-export default HomeSection;
+export default HeaderSection;

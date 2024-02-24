@@ -38,7 +38,7 @@ const Menu: React.FC = ({}) => {
         <Link onClick={() => closeSlider()} href={"/"}>
           <Image src={Logo} alt="Logo" className="w-14 sm:w-20" />
         </Link>
-        <div className="flex flex-col mt-10">
+        <div className="flex flex-col gap-2 mt-10">
           <Link
             className="text-lg hover:text-blue-500"
             onClick={() => closeSlider()}
@@ -48,14 +48,18 @@ const Menu: React.FC = ({}) => {
           </Link>
           <Link
             onClick={() => closeSlider()}
+            href={"/students"}
+            className="text-lg hover:text-blue-500"
+          >
+            Students
+          </Link>
+          <Link
+            onClick={() => closeSlider()}
             href={"/events"}
             className="text-lg hover:text-blue-500"
           >
             Events
           </Link>
-          {/* <Link onClick={() => closeSlider()} href={"#"} className="text-lg hover:text-blue-500">
-            Students
-          </Link> */}
           <Link
             onClick={() => closeSlider()}
             title="Location on Google maps"

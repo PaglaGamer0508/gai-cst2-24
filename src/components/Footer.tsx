@@ -31,20 +31,10 @@ const Footer: React.FC = ({}) => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-2 bg-[#333333] p-3 sm:p-4 sm:px-8">
+      <div className="flex justify-center gap-2 bg-[#333333] p-6">
         <p className="flex items-center gap-x-1">
-          <Copyright className="w-5 h-5" /> <span>Copyright GAI-CST2-24</span>
-        </p>
-        <p>
-          Powered by{" "}
-          <Link
-            title="Harun Zaber"
-            target="_blank"
-            className="hover:text-blue-500"
-            href={"https://harunzaberhz.web.app/"}
-          >
-            Harun
-          </Link>
+          <Copyright className="w-5 h-5" />
+          <span>Copyright GAI-CST2-24</span>
         </p>
       </div>
     </div>

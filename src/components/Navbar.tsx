@@ -20,12 +20,12 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
           </h1>
         </Link>
         <div className="hidden sm:flex items-center gap-x-3 ml-6">
+          <Link href={"/students"} className="text-lg hover:text-blue-500">
+            Students
+          </Link>
           <Link href={"/events"} className="text-lg hover:text-blue-500">
             Events
           </Link>
-          {/* <Link href={"#"} className="text-lg hover:text-blue-500">
-            Students
-          </Link> */}
           <Link
             title="Location on Google maps"
             href={"/location"}
