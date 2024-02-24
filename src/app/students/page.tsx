@@ -1,5 +1,10 @@
 import React from "react";
 import { students } from "@/lib/students";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Students - GAI-CST2-24",
+};
 
 const page: React.FC = () => {
   return (
