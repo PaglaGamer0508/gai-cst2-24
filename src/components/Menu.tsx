@@ -24,23 +24,36 @@ const Menu: React.FC = ({}) => {
     <div
       className={`${
         isOpen ? "block" : "hidden"
-      } flex sm:hidden fixed inset-0 z-[50] bg-black/80`}
+      } sm:hidden fixed inset-0 z-[50] bg-black/80 backdrop-blur-md`}
     >
-      <button className="absolute top-2 right-2" onClick={() => closeSlider()}>
-        <X className="w-8 h-8 text-white" />
-      </button>
+      <div className="flex items-center justify-between px-2 py-[11px]">
+        <Link
+          onClick={() => closeSlider()}
+          href={"/"}
+          className="flex items-center gap-x-2"
+        >
+          <Image src={Logo} alt="Logo" className="w-14 sm:w-20" />
+          <h1 className="text-xl sm:text-3xl">
+            GAI-C
+            <span className="text-blue-500">S</span>
+            <span className="text-[#b3d7a7]">T</span>
+            2-24
+          </h1>
+        </Link>
+
+        <button onClick={() => closeSlider()}>
+          <X className="w-8 h-8 text-white" />
+        </button>
+      </div>
 
       <div
         className={`w-fit h-full ${
           menuOpen ? "" : "-translate-x-full"
-        } transition-all duration-100 p-3 w-[50%] bg-[#0f0f0f]`}
+        } transition-all w-full duration-100 p-3`}
       >
-        <Link onClick={() => closeSlider()} href={"/"}>
-          <Image src={Logo} alt="Logo" className="w-14 sm:w-20" />
-        </Link>
-        <div className="flex flex-col gap-2 mt-10">
+        <div className="flex flex-col gap-2">
           <Link
-            className="text-lg hover:text-blue-500"
+            className="bg-gray-700/80 hover:bg-gray-600/80 py-3 px-6 rounded-lg"
             onClick={() => closeSlider()}
             href={"/"}
           >
@@ -49,14 +62,14 @@ const Menu: React.FC = ({}) => {
           <Link
             onClick={() => closeSlider()}
             href={"/students"}
-            className="text-lg hover:text-blue-500"
+            className="bg-gray-700/80 hover:bg-gray-600/80 py-3 px-6 rounded-lg"
           >
             Students
           </Link>
           <Link
             onClick={() => closeSlider()}
             href={"/events"}
-            className="text-lg hover:text-blue-500"
+            className="bg-gray-700/80 hover:bg-gray-600/80 py-3 px-6 rounded-lg"
           >
             Events
           </Link>
@@ -64,17 +77,12 @@ const Menu: React.FC = ({}) => {
             onClick={() => closeSlider()}
             title="Location on Google maps"
             href={"/location"}
-            className="text-lg hover:text-blue-500"
+            className="bg-gray-700/80 hover:bg-gray-600/80 py-3 px-6 rounded-lg"
           >
             Location
           </Link>
         </div>
       </div>
-
-      <div
-        onClick={() => closeSlider()}
-        className="w-[70%] h-full bg-transparent"
-      ></div>
     </div>
   );
 };

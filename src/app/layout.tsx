@@ -11,6 +11,20 @@ export const metadata: Metadata = {
   title: "GAI-CST2-24 - Graphic Arts Institute",
   description:
     "We are students of Govt. Graphic Arts Institute. Computer Science & Technology, 2nd Shift - Batch 2024",
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "./logo_light.svg",
+        href: "./logo_light.svg",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "./logo_dark.svg",
+        href: "./logo_dark.svg",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +37,7 @@ export default function RootLayout({
       <body className={mulish.className}>
         <MenuContainer />
         <Navbar />
-        <div>{children}</div>
+        <div className="pt-[56px] sm:pt-[76px]">{children}</div>
         <Footer />
       </body>
     </html>

@@ -4,7 +4,7 @@ import React from "react";
 
 const Notice: React.FC = ({}) => {
   return (
-    <div className="bg-[#F77E0B] grid place-items-center p-6">
+    <div className="bg-[#F77E0B] grid place-items-center p-4 sm:p-6">
       <Link
         href={`/events/pitha-festival`}
         className="flex items-center text-center text-xl sm:text-3xl font-semibold text-black group"
