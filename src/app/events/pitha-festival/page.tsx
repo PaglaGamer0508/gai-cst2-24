@@ -41,7 +41,7 @@ const page: React.FC = () => {
       </div>
 
       {/* images section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-[1200px] mx-auto p-4">
         {/* image 1 */}
         <ImageItem imageUrl={Pitha1} />
         {/* image 2 */}

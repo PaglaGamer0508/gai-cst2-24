@@ -4,7 +4,7 @@ import SeeLocationOnMaps from "./SeeLocationOnMaps";
 
 const LocationSection: React.FC = () => {
   return (
-    <div className="sm:w-[80%] md:w-[70%] mx-auto text-center px-3 py-6">
+    <div className="sm:w-[80%] md:w-[80%] xl:w-[55%] mx-auto text-center px-3 py-6">
       <h1 className="text-3xl text-blue-500 mb-10">Location</h1>
       <div className="flex items-center gap-x-2 justify-center mb-10">
         <MapPin className="text-gray-500 w-8 h-8" />
