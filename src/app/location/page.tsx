@@ -20,7 +20,7 @@ const page: React.FC = ({}) => {
           width={1000}
           height={1000}
           quality={100}
-          className="w-[95%] sm:w-[80%] md:w-[70%] mx-auto rounded-xl overflow-hidden"
+          className="w-[95%] sm:w-[80%] md:w-[70%] lg:w-[60%] mx-auto rounded-xl overflow-hidden"
         />
         <div className="grid place-items-center gap-1 mt-10">
           <MapPin className="text-blue-500 w-10 h-10" />

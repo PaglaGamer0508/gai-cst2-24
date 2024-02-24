@@ -39,7 +39,11 @@ const Menu: React.FC = ({}) => {
           <Image src={Logo} alt="Logo" className="w-14 sm:w-20" />
         </Link>
         <div className="flex flex-col mt-10">
-          <Link onClick={() => closeSlider()} href={"/"}>
+          <Link
+            className="text-lg hover:text-blue-500"
+            onClick={() => closeSlider()}
+            href={"/"}
+          >
             Home
           </Link>
           <Link
