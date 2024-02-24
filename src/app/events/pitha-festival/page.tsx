@@ -4,11 +4,12 @@ import Pitha2 from "@/../public/pitha-2.png";
 import Pitha3 from "@/../public/pitha-3.png";
 import SeeLocationOnMaps from "@/components/SeeLocationOnMaps";
 import { MapPin } from "lucide-react";
+import { Metadata } from "next";
 import { Alkatra } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 import ImageItem from "./ImageItem";
-import { Metadata } from "next";
+import LocationSection from "@/components/LocationSection";
 
 const alkatra = Alkatra({ weight: ["700"], subsets: ["latin"] });
 
@@ -40,7 +41,7 @@ const page: React.FC = () => {
       </div>
 
       {/* images section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-4">
         {/* image 1 */}
         <ImageItem imageUrl={Pitha1} />
         {/* image 2 */}
@@ -58,29 +59,7 @@ const page: React.FC = () => {
       </div>
 
       {/* location section */}
-      <div className="sm:w-[80%] md:w-[60%] mx-auto text-center px-3 py-10">
-        <h1 className="text-3xl text-blue-500 mb-10">Location</h1>
-        <div className="flex items-center gap-x-2 justify-center mb-10">
-          <MapPin className="text-gray-500 w-8 h-8" />
-          <p className="text-xl sm:text-2xl max-w-[80%] sm:max-w-max text-left">
-            {/* <MapPin /> */}
-            Shat Masjid road, Mohammadpur, Dhaka-1207.
-          </p>
-        </div>
-
-        <Image
-          src={LocationImage}
-          alt="location"
-          width={1000}
-          height={1000}
-          quality={100}
-          className="w-[95%] sm:w-[80%] md:w-[70%] mx-auto rounded-xl overflow-hidden"
-        />
-
-        <div className="grid place-items-center mt-10">
-          <SeeLocationOnMaps />
-        </div>
-      </div>
+      <LocationSection />
     </div>
   );
 };
