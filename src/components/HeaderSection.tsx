@@ -8,7 +8,7 @@ const HeaderSection: React.FC = ({}) => {
           We are students of{" "}
           <span className="text-blue-500">Govt. Graphic Arts Institute</span>
         </p>
-        <h1 className="text-3xl sm:text-5xl text-center leading-10">
+        <h1 className="text-3xl sm:text-5xl text-center font-medium leading-10">
           Computer Science & Technology, 2nd Shift - Batch 2024
         </h1>
       </div>

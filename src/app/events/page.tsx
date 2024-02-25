@@ -12,7 +12,7 @@ const page: React.FC = ({}) => {
       <div className="sm:w-[80%] md:w-[70%] lg:w-[50%] mx-auto p-3">
         <h1 className="text-2xl text-blue-500 mb-2">Events</h1>
         {/* Pitha Festival */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 pt-3">
           <EventItem
             eventState="upcoming"
             eventName="Pitha Festival"

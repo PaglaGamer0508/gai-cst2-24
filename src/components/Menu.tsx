@@ -46,43 +46,51 @@ const Menu: React.FC = ({}) => {
         </button>
       </div>
 
-      <div
+      {/* <div
         className={`w-fit h-full ${
           menuOpen ? "" : "-translate-x-full"
         } transition-all w-full duration-100 p-3`}
-      >
-        <div className="flex flex-col gap-2">
-          <Link
-            className="bg-gray-700/80 hover:bg-gray-600/80 py-3 px-6 rounded-lg"
-            onClick={() => closeSlider()}
-            href={"/"}
-          >
-            Home
-          </Link>
-          <Link
-            onClick={() => closeSlider()}
-            href={"/students"}
-            className="bg-gray-700/80 hover:bg-gray-600/80 py-3 px-6 rounded-lg"
-          >
-            Students
-          </Link>
-          <Link
-            onClick={() => closeSlider()}
-            href={"/events"}
-            className="bg-gray-700/80 hover:bg-gray-600/80 py-3 px-6 rounded-lg"
-          >
-            Events
-          </Link>
-          <Link
-            onClick={() => closeSlider()}
-            title="Location on Google maps"
-            href={"/location"}
-            className="bg-gray-700/80 hover:bg-gray-600/80 py-3 px-6 rounded-lg"
-          >
-            Location
-          </Link>
-        </div>
+      > */}
+      <div className="flex flex-col gap-2 p-3">
+        <Link
+          className={`bg-gray-700/80 hover:bg-gray-600/80 py-3 px-6 rounded-lg transition-transform duration-75 w-full ${
+            menuOpen ? "" : "-translate-x-[120%]"
+          }`}
+          onClick={() => closeSlider()}
+          href={"/"}
+        >
+          Home
+        </Link>
+        <Link
+          onClick={() => closeSlider()}
+          href={"/students"}
+          className={`bg-gray-700/80 hover:bg-gray-600/80 py-3 px-6 rounded-lg transition-transform duration-75 w-full ${
+            menuOpen ? "" : "-translate-x-[120%]"
+          } delay-75`}
+        >
+          Students
+        </Link>
+        <Link
+          onClick={() => closeSlider()}
+          href={"/events"}
+          className={`bg-gray-700/80 hover:bg-gray-600/80 py-3 px-6 rounded-lg transition-transform duration-75 w-full ${
+            menuOpen ? "" : "-translate-x-[120%]"
+          } delay-100`}
+        >
+          Events
+        </Link>
+        <Link
+          onClick={() => closeSlider()}
+          title="Location on Google maps"
+          href={"/location"}
+          className={`bg-gray-700/80 hover:bg-gray-600/80 py-3 px-6 rounded-lg transition-transform duration-75 w-full ${
+            menuOpen ? "" : "-translate-x-[120%]"
+          } delay-150`}
+        >
+          Location
+        </Link>
       </div>
+      {/* </div> */}
     </div>
   );
 };
