@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="pb-6">
-      {/* If there is no recent events, then comment out the Notice component */}
+      {/* If there is no upcoming events, then comment out the Notice component */}
       <Notice />
       <HeaderSection />
 

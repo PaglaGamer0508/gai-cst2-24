@@ -25,7 +25,7 @@ const Navbar: React.FC = ({}) => {
 
   return (
     <div
-      className={`flex items-center justify-between fixed w-full top-0 p-2 sm:p-4 bg-black/60 backdrop-blur-md ${
+      className={`flex items-center justify-between fixed w-full top-0 p-2 sm:p-4 sm:px-8 bg-black/60 backdrop-blur-md ${
         isScrolled ? "shadow-lg shadow-black/40" : ""
       }`}
     >
