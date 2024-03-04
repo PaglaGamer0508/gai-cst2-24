@@ -14,7 +14,7 @@ const page: React.FC = ({}) => {
         {/* Pitha Festival */}
         <div className="flex flex-col gap-4 pt-3">
           <EventItem
-            eventState="upcoming"
+            eventState="ended"
             eventName="Pitha Festival"
             eventDate="March 1, 2024"
             url="/events/pitha-festival"
