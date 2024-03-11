@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="pb-6">
       {/* If there is no upcoming events, then comment out the Notice component */}
-      <Notice />
+      {/* <Notice /> */}
       <HeaderSection />
 
       <div className="flex flex-col gap-y-2 w-[95%] sm:w-[70%] md:w-[50%] lg:w-[30%] mx-auto">
