@@ -13,7 +13,7 @@ const Footer: React.FC = ({}) => {
             title="Harun Zaber"
             target="_blank"
             className="hover:text-blue-500"
-            href={"https://harunzaberhz.web.app/"}
+            href={"https://harunzaberhz.web.app"}
           >
             Harun
           </Link>
@@ -25,7 +25,7 @@ const Footer: React.FC = ({}) => {
             title="Fahad Mahmud"
             target="_blank"
             className="hover:text-blue-500"
-            href={"https://www.facebook.com/fahad.mahmud.16547008"}
+            href={"https://fahadmahmud.vercel.app"}
           >
             Fahad
           </Link>
